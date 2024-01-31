@@ -17,7 +17,7 @@ void main(List<String> args) {
 
 class Cookies {
   String shape = 'circle';
-  double size = 54.7;
+  double size=23.53;
   void method(double size) {
     this.size = size;
   }

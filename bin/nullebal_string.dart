@@ -1,7 +1,6 @@
 String? str;
 void main() {
   print(str);
-
   str = "Deepak";
   print(str?.isEmpty);
   //yadi me yaha (str.length) likhata hu to muje error milegi.
@@ -10,7 +9,8 @@ void main() {
   // isliye jab bhi str ki koi bhi method call karo uske shath '?' ya '!' ye symboll lagana jaruri rahata hai.
 
   str = null;
-  print(str?.length ?? 'is veriable me kuch nahi hai, matlab ye null veriable hai');
+  print(str?.length ??
+      'is veriable me kuch nahi hai, matlab ye null veriable hai');
   //es line ka matlab hota hai ki yadi koi veriable null nahi hai to length print kar do.
   //or yadi vo null hai to '??' symbol ke aage likhi value print ya return kar do.
 

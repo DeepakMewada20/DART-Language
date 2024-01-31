@@ -1,10 +1,8 @@
 void main() {
-  int? a =
-      null; //bina ? symbole lagaye hum kisi bhi deta type me 'null' store nahi kara sakte.
+  int? a =null; //bina ? symbole lagaye hum kisi bhi deta type me 'null' store nahi kara sakte.
   String? str = null;
 
-  final samevalue =
-      null; // but ver/final/const veriable me hum '?' symbol use kare bina null store kara sakte hai
+  final samevalue = null; // but ver/final/const veriable me hum '?' symbol use kare bina null store kara sakte hai
   // but feer hum kisi bhi veriabal method ko use nahi kar sakte hai like -->str.length(), a.isOdd etc.
 
   print(samevalue);

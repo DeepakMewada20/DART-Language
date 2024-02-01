@@ -7,7 +7,8 @@ void main(List<String> args) {
 
   //yaha par Constents class ka object banega, isliye Constuctoe call huga.
   Constents().welcome();
-
+  
+  //gat() ek static function hai, isliye constents() class ka object use call nahi kar sakta.
   int a = Constents().gat();
 }
 

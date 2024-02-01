@@ -1,11 +1,11 @@
 void main(List<String> args) {
-  final d1 = Dog(4, 6);
+  final d1 = Dog(4, 9);
   d1.walk();
 }
 
 class Animul {
   int a1 = 67;
-  Animul({int? x}) {
+  Animul(int? x) {
     print("this is Animul class Constructor!");
     print("value of x : $x");
   }
@@ -18,13 +18,11 @@ class Animul {
 }
 
 class Dog extends Animul {
-  Dog(int a, int b, {super.x = 9}) {
-    print("This if Dog class Constructor!");
-    print("value of x : $a");
-    print("value of x : $b");
+  Dog(int a, b) : super(a) {
+    print("Thsi is a child class (Dog class) constructor $a $b");
   }
   bool tel = true;
-  void speck() {
+  void speeck() {
     print("bhav bhav ....");
   }
 }

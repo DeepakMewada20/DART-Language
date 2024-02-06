@@ -9,7 +9,7 @@ void main(List<String> args) {
   Constents().welcome();
   
   //gat() ek static function hai, isliye constents() class ka object use call nahi kar sakta.
-  int a = Constents().gat();
+  int a = Constents.gat();
 }
 
 class Constents {

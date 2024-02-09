@@ -43,7 +43,9 @@ void main(List<String> args) {
   print(std.firstOrNull);
 
   final List temList = [54, 76];
-  print(std.contains(std1)); 
+  print(std.contains(std1));
+  
+  print(identical(a, b)) 
 }
 
 //<T> it is a jenerik

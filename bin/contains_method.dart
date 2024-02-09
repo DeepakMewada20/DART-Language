@@ -1,3 +1,5 @@
+import 'function3.dart';
+
 void main(List<String> args) {
   List<Student> std = [
     Student('Deepak'),
@@ -6,7 +8,20 @@ void main(List<String> args) {
     Student('madhav'),
     Student('ravi')
   ];
-  print(std.contains(Student('Deepak')));
+
+  Student studentName = Student('Deepak');
+  print(std);
+  //print(identical(studentName, std[0]));
+
+  //compaire any two object value with any key word
+  print(std.any((element) =>
+      element.runtimeType == studentName.runtimeType &&
+      studentName.name == element.name));
+
+  print(studentName.runtimeType == std[0].runtimeType);
+  print(studentName.runtimeType);
+  print(std.runtimeType);
+  print(std[0].runtimeType);
 }
 
 final class Student<T> {
@@ -15,4 +30,14 @@ final class Student<T> {
 
   @override
   String toString() => '$name';
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Student &&
+          runtimeType == other.runtimeType &&
+          name == other.name;
+
+  @override
+  int get hashCode => name.hashCode;
 }

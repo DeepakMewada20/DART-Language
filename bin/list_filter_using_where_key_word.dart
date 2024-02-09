@@ -8,7 +8,7 @@ void main(List<String> args) {
   ];
 
   print(students);
-  final filterStudent = students.where((stu) => (stu.marks) >= 40); //it is return a Iterable<Student<dynamic>>.
+  final filterStudent = students.where((stu) => stu.marks >= 40); //it is return a Iterable<Student<dynamic>>.
   //final filterStudent = students.where((stu) => (stu.marks) >= 40).toList;  //you can write like this for convert to List
   print(filterStudent);
 

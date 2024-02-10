@@ -42,10 +42,23 @@ void main(List<String> args) {
 
   print(std.firstOrNull);
 
-  final List temList = [54, 76];
+  final List temList1 = [54, 76];
+  final List temList2 = [65, 87];
   print(std.contains(std1));
-  
-  print(identical(a, b)) 
+  temList1.addAll(temList2);
+  print(temList1);
+
+  int a = 1;
+  int b = 1;
+  String str1 = 'de';
+  String str2 = 'de';
+  print(identical(str1, str2));
+  print(identical(a, b));
+  print(str1==str2);
+
+  Student st = Student('ka');
+  Student st1 = Student('ka');
+  print(identical(st, st1));
 }
 
 //<T> it is a jenerik

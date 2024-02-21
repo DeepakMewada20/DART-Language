@@ -5,7 +5,8 @@ void main(List<String> args) {
   List<int> marks = [65, 78, 23, 45, 90, 65];
   print(marks[1]);
 
-  Student st = Student<String>('Deepak', 78); //minimum 1 peramiter is must be String.
+  Student st =
+      Student<String>('Deepak', 78); //minimum 1 peramiter is must be String.
   print(st.name);
 
   final List arr = [65, 87, 12];
@@ -21,11 +22,12 @@ void main(List<String> args) {
     76,
     true
   ];
-  print(studentes[0]);  //it give Instance of 'Student<String>' beacuse stedentes[0] me ek class store hai, ya class ka instence
+  print(studentes[
+      0]); //it give Instance of 'Student<String>' beacuse stedentes[0] me ek class store hai, ya class ka instence
   //first method for fetch data in List
-  int? i = 3;
+  int i = 3;
   if (studentes[i].runtimeType == Student) {
-    print(studentes[i]);
+    print(studentes[i].toString());
   } else {
     print(studentes[i]);
   }
